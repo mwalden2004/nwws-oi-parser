@@ -1,0 +1,31 @@
+{
+  "name": "nwws-oi-ingester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node ./build/index.js",
+    "dev": "npm run build && concurrently -r \"tsc -p tsconfig.json -w\" \"supervisor -w ./build,./config -e js,json,yml --no-restart-on error ./build/index.js\"",
+    "test": "npm run build && concurrently -r \"tsc -p tsconfig.json -w\" \"supervisor -w ./build,./config -e js,json,yml --no-restart-on error ./build/test.js\"",
+    "uhh": "npm run build && node ./build/test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@xmpp/client": "^0.13.1",
+    "dotenv": "^16.3.1",
+    "flatted": "^3.2.9",
+    "mongodb": "^5.2.0",
+    "node-fetch": "^1.7.3",
+    "reflect-metadata": "^0.1.13",
+    "runtypes": "^6.7.0",
+    "typeorm": "^0.3.16",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "ts-node": "10.7.0",
+    "typescript": "4.5.2"
+  }
+}
