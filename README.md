@@ -66,4 +66,4 @@ Alternatively, if you want to run the parser once, you can use:
 
 ### Questions and Concerns
 
-If you have any questions or intend to use this parser in a production application, please don't hesitate to contact the developer at matthew@mwalden.tech.
+If you have any questions or intend to use this parser in a production application, please don't hesitate to contact me at matthew@mwalden.tech.
