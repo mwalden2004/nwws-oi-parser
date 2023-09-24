@@ -1,45 +1,69 @@
 > **Warning**
-> This is not a module, it is built to be expanded on and ran independently.
+> This is not a standalone module; it is designed to be expanded upon and run independently.
 
-# NWWS-OI Injestor
+# NWWS-OI Parser
 
-NWWS-OI is a Node.js module that provides an interface for receiving National Weather Service (NWS) warnings and products via XMPP (Jabber) protocol. It allows you to receive NWS warnings and products in real-time by connecting to the NWS XMPP server.
+The NWWS-OI Parser is a Node.js module that offers an interface for receiving National Weather Service (NWS) warnings and products via the XMPP (Jabber) protocol. It enables real-time reception of NWS warnings and products by connecting to the NWS XMPP server.
 
-# Potential Use Cases
+## Potential Use Cases
+
+NWWS-OI Parser can be utilized in various applications, including but not limited to:
+
 1. Alert dashboards
-2. Bots to dissemenate alerts to users of an app.etc
-3. Text message alerting for warnings
-4. Use in EAS
-5. Implentation into emergency management applications
-6. And even more.
+2. Bots for distributing alerts to users within an application
+3. Text message alerting for weather warnings
+4. Integration into the Emergency Alert System (EAS)
+5. Implementation in emergency management applications
+6. And much more.
+
+### Why Use This?
+
+#### Type Safety and Speed
+
+- **Type Safety:** NWWS-OI Parser is designed with type safety in mind, ensuring that you receive structured and well-typed data, reducing the likelihood of runtime errors in your application.
+
+- **Faster Data:** When compared to using public NWS APIs, NWWS-OI Parser offers a faster way to access NWS warnings and products. By connecting directly to the source, you receive real-time data with minimal delays.
 
 ### Prerequisites
 
-To use NWWS-OI, you need to have an account with the National Weather Service. If you don't have an account yet, you can register [here](https://www.weather.gov/NWWS/nwws_oi_request).
+Before using NWWS-OI Parser, you'll need to have an account with the National Weather Service. If you don't have an account yet, you can register for one [here](https://www.weather.gov/NWWS/nwws_oi_request).
 
-### Usage
+### Getting Started
 
-First of all, install the required dependecies, and have a MongoDB server (you can optionally pretty easily strip the code for this).
-> npm i
+Follow these steps to get started with NWWS-OI Parser:
 
-Create a .env file, and fill it in like the .env.example file. Discord webhook is not required, it is just for testing.
+1. Install the required dependencies by running:
+   ```
+   npm install
+   ```
 
-To run
-> npm run start
+2. Create a `.env` file and fill it in based on the provided `.env.example` file. Note that a Discord webhook is not required and is primarily for testing purposes.
 
-To build
-> npm run build
+3. To start the parser, run:
+   ```
+   npm run start
+   ```
 
-To have hot-reload
-> npm run dev
+4. To build the project, use:
+   ```
+   npm run build
+   ```
 
-To run the test
-> npm run test
+5. For hot-reloading during development, use:
+   ```
+   npm run dev
+   ```
 
-Or if you only want to run once
+6. To run tests, execute:
+   ```
+   npm run test
+   ```
 
-> npm run uhh
+Alternatively, if you want to run the parser once, you can use:
+   ```
+   npm run uhh
+   ```
 
-### Questions, concerns
+### Questions and Concerns
 
-If you have any questions, or wish to use this in a production application please contact me at matthew@mwalden.tech.
+If you have any questions or intend to use this parser in a production application, please don't hesitate to contact the developer at matthew@mwalden.tech.
